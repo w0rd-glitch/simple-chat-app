@@ -1,0 +1,107 @@
+//////////////////////////////////////////////////// NAVBAR ////////////////////////////////////////////////////////////////////
+
+
+
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style-type: none;
+    width: 100px;
+    height: 100vh;
+    background-color: black;
+    animation: navbar .7s ease forwards;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    li {
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        color: #777575;
+        font-size: 25px;
+        transition: .2s;
+        &:focus, &:hover, &:active {
+            color: white;
+            border-color: white;
+        }
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
+
+
+//////////////////////////////////////////////////// HOMEPAGE ////////////////////////////////////////////////////////////////////
+
+.home-page {
+    display: flex;
+    animation: home-page .7s ease forwards;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 20px;
+    width: 100%;
+    .first-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 40%;
+    }
+    .second-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 60%;
+    }
+}
+
+//////////////////////////////////////////////////// MESSAGES-PAGE ////////////////////////////////////////////////////////////////////
+
+.message-page {
+    margin-left: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    animation: home-page 0.7s ease forwards;
+    .message-list {
+        background-color: #cacaca;
+        padding: 20px;
+        height:fit-content;
+        border-radius: 30px;
+        margin-top: 40px;
+    }
+    .message-container {
+        background-color: #dfd7d7 ;
+        border-radius: 15px;
+        margin: 20px 0px 20px 0px;
+        .message {
+            padding: 8px 16px;
+        }
+    }
+}
+
+
+//////////////////////////////////////////////////// ANIMATIONS ////////////////////////////////////////////////////////////////////
+
+
+@keyframes navbar {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes home-page {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
