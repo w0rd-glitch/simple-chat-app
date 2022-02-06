@@ -80,6 +80,49 @@ ul {
     }
 }
 
+//////////////////////////////////////////////////// INBOX-PAGE ////////////////////////////////////////////////////////////////////
+
+.inbox-page {
+    margin-left: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    animation: home-page 0.7s ease forwards;
+    .something {
+        width: 50%;
+        text-align: center;
+    }
+    .inbox-container {
+        width: 50%;
+        .email {
+            display: flex;
+            flex-direction: row;
+            background-color:#cacaca;
+            border-radius: 30px;
+            align-items: center;
+            margin-top: 10px;
+            p {
+                padding: 10px;
+            }
+            .email-img-text {
+                display: flex;
+                flex-direction: row;
+                padding: 10px;
+                h3 {
+                    text-align: center;
+                }
+                
+            }
+            img {
+                width: 40px;
+                height: 40px;
+                padding-right: 10px;
+            }
+        }
+    }
+}
+
+
 
 //////////////////////////////////////////////////// ANIMATIONS ////////////////////////////////////////////////////////////////////
 
